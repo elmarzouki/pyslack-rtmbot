@@ -1,7 +1,7 @@
 import os
 import time
 from slackclient import SlackClient
-
+from brain import Brain
 
 bot_token = os.environ.get('SLACK_BOT_TOKEN')
 channel = "REPLACE_WITH_YOUR_CHANNEL_NAME"
@@ -10,10 +10,23 @@ slack_client = SlackClient(bot_token)
 chatbot_id = None
 # constants
 rtm_read_delay = 1
+brain = Brain('REPLACE_WITH_YOUR_CHATBOT_NAME')
+
+
+def get_dummy_message_replay(user, message):
+    # echo the message
+    return "New echo <@{}>: {}".format(user, message)
+
+
+def get_smart_message_replay(user, message):
+    # call the NLP lib to get a proper response
+    return brain.get_reponse(message)
 
 
 def get_message_replay(user, message):
-    return "New echo <@{}>: {}".format(user, message)
+    dummy_replay = get_dummy_message_replay(user, message)
+    smart_replay = get_smart_message_replay(user, message)
+    return smart_replay
 
 
 def connect_slack():

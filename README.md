@@ -30,10 +30,29 @@ simple slack bot skeleton.
 2. Navigate to the project directory: `cd slack-bot-skeleton`
 3. Create virtualenv: `virtualenv env`
 4. Activate env: `source env/bin/activate`
-5. Install pipenv: `pip install slackclient`
-6. export secret tokens as environment variables: `export SLACK_BOT_TOKEN='REPLACE_WITH_YOUR_BOT_USER_ACCESS_TOKEN'`
-7. Add your channel name to "channel" at bot/chatbot.py line 7
+5. Install pipenv: `pip install pipenv`
+6. Install requirements: `pipenv install`
+7. export secret tokens as environment variables: `export SLACK_BOT_TOKEN='REPLACE_WITH_YOUR_BOT_USER_ACCESS_TOKEN'`
+8. Add your channel name to **channel** at bot/chatbot.py line 7
+    ```python
+    channel = "REPLACE_WITH_YOUR_CHANNEL_NAME"
+    ```
 
 ## Run the application
 
 Run the bot: `python bot/chatbot.py`
+
+## Add Some NLP Magic to the bot
+
+1. Add your chatbot name to **brain** at bot/chatbot.py line 13
+    ```python
+    brain = Brain('REPLACE_WITH_YOUR_CHATBOT_NAME')
+    ```
+
+2. Return the smart_replay at bot/chatbot.py - get_message_replay method
+    ```python
+    def get_message_replay(user, meesage):
+        dummy_replay = get_dummy_message_replay(user, message)
+        smart_replay = get_smart_message_replay(user, message)
+        return smart_replay
+    ```
