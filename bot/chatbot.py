@@ -26,7 +26,7 @@ def get_smart_message_replay(user, message):
 def get_message_replay(user, message):
     dummy_replay = get_dummy_message_replay(user, message)
     smart_replay = get_smart_message_replay(user, message)
-    return smart_replay
+    return dummy_replay
 
 
 def connect_slack():
