@@ -28,10 +28,14 @@ simple slack bot skeleton.
 
 1. Clone this repository: `https://github.com/iSuperMostafa/slack-bot-skeleton.git`
 2. Navigate to the project directory: `cd slack-bot-skeleton`
-3. Create virtualenv: `virtualenv env`
-4. Activate env: `source env/bin/activate`
-5. Install pipenv: `pip install pipenv`
-6. Install requirements: `pipenv install`
+3. If you don't have virtualenv Installed, Install it: `pip install virtualenv`
+4. Create virtualenv: `virtualenv env`
+5. Activate env:
+    ```bash
+        source env/bin/activate         # if you're using linux :')
+        env\Scripts\activate            # if you're using windows -_-
+    ```
+6. Install requirements: `pip install -r requirements.txt`
 7. export secret tokens as environment variables: `export SLACK_BOT_TOKEN='REPLACE_WITH_YOUR_BOT_USER_ACCESS_TOKEN'`
 8. Add your channel name to **channel** at bot/chatbot.py line 7
     ```python
