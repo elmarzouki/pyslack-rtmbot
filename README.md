@@ -32,11 +32,15 @@ simple slack bot skeleton.
 4. Create virtualenv: `virtualenv env`
 5. Activate env:
     ```bash
-        source env/bin/activate         # if you're using linux :')
-        env\Scripts\activate            # if you're using windows -_-
+    source env/bin/activate         # if you're using linux :')
+    env\Scripts\activate            # if you're using windows -_-
     ```
 6. Install requirements: `pip install -r requirements.txt`
-7. export secret tokens as environment variables: `export SLACK_BOT_TOKEN='REPLACE_WITH_YOUR_BOT_USER_ACCESS_TOKEN'`
+7. export secret tokens as environment variables:
+    ```bash
+    export SLACK_BOT_TOKEN='REPLACE_WITH_YOUR_BOT_USER_ACCESS_TOKEN'    # if you're using linux :')
+    SET SLACK_BOT_TOKEN='REPLACE_WITH_YOUR_BOT_USER_ACCESS_TOKEN'       # if you're using windows -_-
+    ```
 8. Add your channel name to **channel** at bot/chatbot.py line 7
     ```python
     channel = "REPLACE_WITH_YOUR_CHANNEL_NAME"
