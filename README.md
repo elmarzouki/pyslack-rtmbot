@@ -1,6 +1,6 @@
 # slack-bot-skeleton
 
-simple slack bot skeleton.
+Slack-Bot interacting with events from [Slack's RTM API](https://api.slack.com/rtm) integrated with [ChatterBot](https://chatterbot.readthedocs.io/en/stable/).
 
 ## Start with Slack-apps
 
@@ -26,7 +26,7 @@ simple slack bot skeleton.
 
 ## Setup the environment
 
-1. Clone this repository: `git clone https://github.com/iSuperMostafa/slack-bot-skeleton.git`
+1. Clone this repository: `git clone git@github.com:iSuperMostafa/pyslack-rtmbot.git`
 2. Navigate to the project directory: `cd slack-bot-skeleton`
 3. If you don't have virtualenv Installed, Install it: `pip install virtualenv`
 4. Create virtualenv: `virtualenv env`
