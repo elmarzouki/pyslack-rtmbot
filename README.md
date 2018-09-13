@@ -1,4 +1,4 @@
-# slack-bot-skeleton
+# pyslack-rtmbot
 
 Slack-Bot interacting with events from [Slack's RTM API](https://api.slack.com/rtm) integrated with [ChatterBot](https://chatterbot.readthedocs.io/en/stable/).
 
