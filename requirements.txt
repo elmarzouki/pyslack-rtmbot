@@ -1,3 +1,5 @@
+django
+configparser
 slackclient
 chatterbot
 fuzzywuzzy
