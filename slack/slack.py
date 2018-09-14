@@ -33,7 +33,7 @@ class Slack:
         # instantiate Slack client
         self.slack_client = SlackClient(self.bot_token)
         # constants
-        self.rtm_read_delay = config['SLACK']['rtm_read_delay']
+        self.rtm_read_delay = int(config['SLACK']['rtm_read_delay'])
         return self
 
     def __connect__(self):
