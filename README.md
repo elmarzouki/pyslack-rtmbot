@@ -23,7 +23,7 @@ Slack-Bot interacting with events from [Slack's RTM API](https://api.slack.com/r
     
 ## Run the application
 
-Run the bot: `python bot.py runserver`
+Run the bot: `python app.py`
 
 ## Add Some NLP Magic to the bot
 `

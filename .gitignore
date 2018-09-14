@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# configurations
+config.override.ini
+
+# sqlite3
+db.sqlite3

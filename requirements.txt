@@ -1,4 +1,3 @@
-django
 configparser
 slackclient
 chatterbot
